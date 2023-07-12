@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block user_data %}
+{% for brand in brands %}
+    <h3>{{ brand.name }}</h3>
+    <!-- <p>{{product.price}}</p> -->
+    <p>{{brand.country}}</p>
+    <p>{{ brand.category.name }}</p>
+{% endfor %}
+{% endblock user_data %}
